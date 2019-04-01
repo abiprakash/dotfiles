@@ -15,8 +15,8 @@ fi
 # fi
 
 # Source base16 256 colourspace script.
-if [[ -s "$HOME/.colours/base16-shell/base16-google.dark.sh" ]]; then
-  source "$HOME/.colours/base16-shell/base16-google.dark.sh"
+if [[ -s "$HOME/.colours/base16-shell/base16-eighties.dark.sh" ]]; then
+  source "$HOME/.colours/base16-shell/base16-eighties.dark.sh"
 fi
 
 # Load direnv
@@ -44,6 +44,10 @@ alias gt='go test -v -cover ./...'
 alias python='python3'
 alias weather='curl wttr.in/sydney'
 alias w='curl -s -N wttr.in/sydney | head -n 7'
+alias vim='nvim'
+alias pip='pip3'
+
+alias vc=~'cd ~/version_control'
 
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 

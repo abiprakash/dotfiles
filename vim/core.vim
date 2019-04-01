@@ -32,6 +32,7 @@ syntax on
 command! W :w                                " Seriously, it's not like :W is bound
 set nocompatible                             " Turn off vi compatibility.
 
+set nu                                       " Enable line numbers
 set encoding=utf8                            " Always use unicode.
 set spelllang=en_au                          " Set spell check language.
 set shortmess=aIoO                           " Show short messages, no intro.
@@ -126,9 +127,9 @@ set showcmd                                  " Show last command.
 set noshowmode                               " Don't show the mode since airline shows it
 set title                                    " Set the title of the window in the terminal to the file
 
-if exists('+colorcolumn')
-  highlight colorcolumn ctermbg=236 guibg=#262D51
-endif
+set colorcolumn=80
+highlight colorcolumn ctermbg=238 guibg=#262D51
+let &colorcolumn=join(range(81,999),",")
 
 " -----------------------------
 " Sounds
