@@ -44,11 +44,6 @@ Plug 'posva/vim-vue'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdcommenter'
 
-" Python plugs
-Plug 'nvie/vim-flake8'
-Plug 'vim-python/python-syntax'
-Plug 'davidhalter/jedi-vim'
-
 " Themes
 Plug 'chriskempson/base16-vim'
 
